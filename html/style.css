@@ -1,8 +1,15 @@
 body {
     border-top: 5px solid #41c6f4;
     padding-top: 20px;
+    color:#ccc;
 }
 
+
+ul, li {
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
 .container-fluid {
     padding: 0;
 }
@@ -11,6 +18,9 @@ a {
     color: #41c6f4;
     text-decoration: none;
 }
+
+
+
 
 .logo {
     background: url('images/logo.png') no-repeat;
@@ -159,4 +169,33 @@ img {
 
 .footer {
     color:#666;
+}
+
+
+
+/* projects */
+
+.project-list a {
+    color:#245066;
+    font-size: 18px;
+    padding-right: 40px;
+    text-align: right;
+    display: block;
+    line-height: 40px;
+}
+
+.project-list .selected a {
+    color:#4acaf1;
+    font-weight: bold;
+    background: url("images/right_arrow.png") no-repeat right center;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color:#666;
+}
+
+h3 .subtitle {
+    color:#ccc;
 }

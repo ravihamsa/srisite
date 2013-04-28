@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sri Design</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="container header">
+            <div class="span4 pull-left">
+                <span class="logo">logo</span>
+            </div>
+            <div class="span8 pull-right top-nav">
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="about.html">About & Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="container">
+            <div class="span3 ">
+                <ul class="project-list">
+
+                </ul>
+
+
+            </div>
+
+            <div class="span9 ">
+                <div id="projectDetails">
+
+                </div>
+                </div>
+
+
+        </div>
+    </div>
+
+
+    <div class=" gray-bg">
+        <div class="row-fluid">
+            <div class="container  t-margin b-margin footer">
+                Copyright 2013 Srikanta Reserved.
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="js/require-jquery.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+
+<script type="text/javascript">
+
+    function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+    }
+
+    var projectList = [{"name":"Yahoo! Labs","id":"yahoo_labs","url":"projects/yahoo_labs.html"},
+        {"name":"Yahoo! Exploration","id":"yahoo_exploration","url":"projects/yahoo_exploration.html"},
+        {"name":"Logiplex","id":"logiplex","url":"projects/logiplex.html"},
+        {"name":"Yahoo! Techyard","id":"yahoo_techyard","url":"projects/yahoo_techyard.html"},
+        {"name":"Shivamogga Web","id":"shivamoggaweb","url":"projects/shivamoggaweb.html"},
+        {"name":"Yahoo! Polls","id":"yahoo_polls","url":"projects/yahoo_polls.html"},
+        {"name":"Nutisystem","id":"nutisystem","url":"projects/nutisystem.html"},
+        {"name":"Silkroute escape","id":"silkroute_escape","url":"projects/silkroute_escape.html"},
+        {"name":"Yahoo! Fireeagle","id":"yahoo_fireeagle","url":"projects/yahoo_fireeagle.html"},
+        {"name":"Yahoo! Avatars","id":"yahoo_avatars","url":"projects/yahoo_avatars.html"},
+        {"name":"Yahoo! Alerts","id":"yahoo_alerts","url":"projects/yahoo_alerts.html"},
+        {"name":"Foley Designs","id":"foley_designs","url":"projects/foley_designs.html"}]
+
+    var projectUl = $('.project-list');
+
+    $.each(projectList,function(index, item){
+        projectUl.append('<li id="'+item.id+'"> <a href="?project='+item.id+'" class="project">'+item.name+'</a></li>');
+    })
+
+
+    var curProject = getURLParameter('project') || 'yahoo_labs';
+
+    projectUl.find('#'+curProject).addClass('selected');
+
+    var curProjectConf = _.find(projectList, function(item){return item.id===curProject});
+
+
+    $('#projectDetails').load(curProjectConf.url);
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

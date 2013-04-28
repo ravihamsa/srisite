@@ -1,0 +1,162 @@
+body {
+    border-top: 5px solid #41c6f4;
+    padding-top: 20px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+a {
+    color: #41c6f4;
+    text-decoration: none;
+}
+
+.logo {
+    background: url('images/logo.png') no-repeat;
+    display: block;
+    width: 146px;
+    height: 81px;
+    font-size: 0;
+
+}
+
+.top-nav {
+    text-align: right;
+}
+
+.top-nav li {
+    display: inline-block;
+    margin-left: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.top-nav a {
+    color: #8f8f8f;
+}
+
+.top-nav a:hover {
+    color: #666;
+
+}
+
+.header {
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.t-margin {
+    margin-top: 20px;
+}
+.b-margin {
+    margin-bottom: 20px;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.gray-bg {
+    background-color: #333333;
+    color: #fff;
+    margin-top: 45px;
+}
+
+.gray-bg h1 {
+    color: #666;
+}
+
+.quote p {
+    color: #999;
+}
+
+.quote .author {
+    color: #666;
+}
+
+.content-block {
+    vertical-align: top;
+}
+
+.content-block h3 {
+    text-transform: uppercase;
+    color: #666;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.content-block p {
+    color: #ccc;
+}
+
+.social-bar {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-bar ul {
+    display: inline-block;
+}
+
+.social-bar li {
+    display: inline-block;
+}
+
+.ic-social {
+    display: block;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    font-size: 0;
+    text-indent: -999px;
+    background: url("images/social-bar.png") no-repeat;
+    margin-right: 20px;
+}
+
+.ic-flickr {
+    background-position: -80px top;
+}
+
+.ic-facebook {
+    background-position: -152px top;
+}
+
+.ic-twitter {
+    background-position: -226px top;
+}
+
+.ic-jux {
+    background-position: -297px top;
+}
+
+.ic-pinterest {
+    background-position: -370px top;
+}
+
+.ic-email {
+    background-position: -446px top;
+}
+
+.ic-blue-mobile, .ic-blue-phone, .ic-blue-email {
+    background: url("images/blue-icons.png") no-repeat;
+    display: block;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 40px;
+}
+
+.ic-blue-phone {
+    background-position: left -33px;
+}
+
+.ic-blue-email {
+    background-position: 2px -73px;
+}
+
+
+.footer {
+    color:#666;
+}

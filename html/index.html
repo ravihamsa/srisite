@@ -9,7 +9,7 @@
             padding-top: 20px;
         }
 
-        .container-fluid{
+        .container-fluid {
             padding: 0;
         }
 
@@ -55,6 +55,10 @@
         .t-margin {
             margin-top: 20px;
         }
+        .b-margin {
+            margin-bottom: 20px;
+        }
+
 
         img {
             width: 100%;
@@ -70,11 +74,102 @@
         .gray-bg h1 {
             color: #666;
         }
+
+        .quote p {
+            color: #999;
+        }
+
+        .quote .author {
+            color: #666;
+        }
+
+        .content-block {
+            vertical-align: top;
+        }
+
+        .content-block h3 {
+            text-transform: uppercase;
+            color: #666;
+            font-size: 40px;
+            font-weight: normal;
+        }
+
+        .content-block p {
+            color: #ccc;
+        }
+
+        .social-bar {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .social-bar ul {
+            display: inline-block;
+        }
+
+        .social-bar li {
+            display: inline-block;
+        }
+
+        .ic-social {
+            display: block;
+            height: 50px;
+            width: 50px;
+            overflow: hidden;
+            font-size: 0;
+            text-indent: -999px;
+            background: url("images/social-bar.png") no-repeat;
+            margin-right: 20px;
+        }
+
+        .ic-flickr {
+            background-position: -80px top;
+        }
+
+        .ic-facebook {
+            background-position: -152px top;
+        }
+
+        .ic-twitter {
+            background-position: -226px top;
+        }
+
+        .ic-jux {
+            background-position: -297px top;
+        }
+
+        .ic-pinterest {
+            background-position: -370px top;
+        }
+
+        .ic-email {
+            background-position: -446px top;
+        }
+
+        .ic-blue-mobile, .ic-blue-phone, .ic-blue-email {
+            background: url("images/blue-icons.png") no-repeat;
+            display: block;
+            line-height: 30px;
+            height: 30px;
+            padding-left: 40px;
+        }
+
+        .ic-blue-phone {
+            background-position: left -33px;
+        }
+
+        .ic-blue-email {
+            background-position: 2px -73px;
+        }
+
+
+        .footer {
+            color:#666;
+        }
     </style>
 </head>
 <body>
 <div class="container-fluid">
-
     <div class="row-fluid">
         <div class="container header">
             <div class="span4 pull-left">
@@ -117,22 +212,135 @@
     </div>
 
 
-    <div class="row-fluid gray-bg">
-        <div class="container  t-margin">
-            <div class=" t-margin">
-                <div class="span4">
-                    <img src="images/img4.png"/>
+    <div class=" gray-bg">
+        <div class="row-fluid">
+            <div class="container  t-margin">
+                <div class=" t-margin">
+                    <div class="span4">
+                        <div class="quote">
+                            <p>Everything is designed.
+                                Few things are designed well.</p>
+
+                            <div class="author">- Brian Reed</div>
+                        </div>
+
+                        <div class="quote">
+                            <p>Design should never say,
+                                "Look at me." It should always
+                                say, "Look at this".</p>
+
+                            <div class="author">- David Craib</div>
+                        </div>
+
+
+                    </div>
+                    <div class="span4">
+                        <img src="images/profile.png"/>
+                    </div>
+                    <div class="span4">
+                        <div class="content-block">
+                            <h3>WHAT I BELIEVE</h3>
+
+                            <p>According to me Interactive design is
+                                not just an art though it has to be
+                                aesthetic but it is fundamentally functional.
+                                Every design process is primarily driven
+                                by the purpose of the respective product /
+                                application's goal. However, design is also
+                                not a simple engineering process. Branding,
+                                color & usability often work at more
+                                'abstract' levels and their effective
+                                development depends on many subtle
+                                factors. I try and maintain a clear
+                                philosophy when I generate a Visual design
+                                for web applications and animation based
+                                project elegance through simplicity, brevity
+                                without sacrificing functionality.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="span4">
-                    <img src="images/img5.png"/>
-                </div>
-                <div class="span4">
-                    <img src="images/img6.png"/>
+
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="container  b-margin">
+                <div class="t-margin">
+                    <div class="span4">
+
+                    </div>
+
+                    <div class="span8">
+                        <div class="content-block">
+                            <h3>PHILOSOPHY</h3>
+
+                            <p>There are a few guiding principles that strongly influence my creative work.
+                                I strive for simplicity of values and functionality through creativity and aesthetic
+                                success. I push for truthfulness, personality and substance in design, to bring visual
+                                value.
+                                I see design as a tool to contribute as part of the ecosystem for the betterment of
+                                surrounding in which I live and share.
+                            </p>
+                        </div>
+
+                        <div class="content-block ">
+                            <h3>BACKGROUND</h3>
+
+                            <p>I was born and raised in Shimoga a small town in South India. I have studied Visual
+                                Communication and Multimedia design, and received a Bachelor of Fine Arts from
+                                Ken School Of Arts Bangalore, India.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="row-fluid">
+        <div class="container  t-margin">
+            <div class=" t-margin">
+                <div class="span4">
+                    <div class="content-block">
+                        <h3>POSTAL ADDRESS</h3>
+
+                        <p>
+                            #30/1 'Srikakulam'<br>
+                            Door Number 102, Palace cross Road<br>
+                            Bangalore - INDIA - 560020
+                        </p>
+
+                        <p><span class="ic-blue-mobile">+91 9845388771</span></p>
+
+                        <p><span class="ic-blue-phone">+91 080 23317870</span></p>
+
+                        <p><span class="ic-blue-email"><a
+                                href="mailto:srikantahu@gmail.com">srikantahu@gmail.com</a> </span></p>
+                    </div>
+                </div>
+
+                <div class="span8">
+                    <ul class="social-bar">
+                        <li><a href="linked-in" class="ic-social ic-linked-in"> linked in</a></li>
+                        <li><a href="flickr" class="ic-social ic-flickr"> flickr</a></li>
+                        <li><a href="facebook" class="ic-social ic-facebook">facebook</a></li>
+                        <li><a href="twitter" class="ic-social ic-twitter">twitter</a></li>
+                        <li><a href="jux" class="ic-social ic-jux">jux</a></li>
+                        <li><a href="pinterest" class="ic-social ic-pinterest">pinterest</a></li>
+                        <li><a href="email" class="ic-social ic-email">email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" gray-bg">
+        <div class="row-fluid">
+            <div class="container  t-margin b-margin footer">
+                Copyright 2013 Srikanta Reserved.
+            </div>
+        </div>
+    </div>
 
 </div>
 </body>

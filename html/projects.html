@@ -14,7 +14,7 @@
             </div>
             <div class="span8 pull-right top-nav">
                 <ul>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li class="selected"><a href="projects.html">Projects</a></li>
                     <li><a href="photography.html">Photography</a></li>
                     <li><a href="about.html">About & Contact</a></li>
                 </ul>
@@ -80,7 +80,7 @@
     })
 
 
-    var curProject = getURLParameter('project') || 'yahoo_labs';
+    var curProject = getURLParameter('project') || 'shivamoggaweb';
 
     projectUl.find('#'+curProject).addClass('selected');
 

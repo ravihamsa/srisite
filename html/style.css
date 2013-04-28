@@ -1,6 +1,5 @@
 body {
     border-top: 5px solid #41c6f4;
-    padding-top: 20px;
     color:#ccc;
 }
 
@@ -14,7 +13,7 @@ ul, li {
     padding: 0;
 }
 
-a {
+a, a:hover {
     color: #41c6f4;
     text-decoration: none;
 }
@@ -37,18 +36,29 @@ a {
 
 .top-nav li {
     display: inline-block;
-    margin-left: 20px;
     text-transform: uppercase;
     text-decoration: none;
 }
 
+
+
 .top-nav a {
     color: #8f8f8f;
+    display:inline-block;
+    height: 85px;
+    line-height: 85px;
+    border: 3px solid #fff;
+    padding:0 10px;
 }
 
 .top-nav a:hover {
     color: #666;
+    border-bottom: 3px solid #98dcf4;
 
+}
+
+.top-nav .selected a, .top-nav .selected a:hover{
+    border-bottom: 3px solid #41c6f4;
 }
 
 .header {

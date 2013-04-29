@@ -35,7 +35,7 @@
                 <div id="projectDetails">
 
                 </div>
-                </div>
+            </div>
 
 
         </div>
@@ -57,42 +57,42 @@
 <script type="text/javascript">
 
     function getURLParameter(name) {
-        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
     }
 
-    var projectList = [{"name":"Yahoo! Labs","id":"yahoo_labs","url":"projects/yahoo_labs.html"},
-        {"name":"Yahoo! Exploration","id":"yahoo_exploration","url":"projects/yahoo_exploration.html"},
-        {"name":"Logiplex","id":"logiplex","url":"projects/logiplex.html"},
-        {"name":"Yahoo! Techyard","id":"yahoo_techyard","url":"projects/yahoo_techyard.html"},
-        {"name":"Shivamogga Web","id":"shivamoggaweb","url":"projects/shivamoggaweb.html"},
-        {"name":"Yahoo! Polls","id":"yahoo_polls","url":"projects/yahoo_polls.html"},
-        {"name":"Nutisystem","id":"nutisystem","url":"projects/nutisystem.html"},
-        {"name":"Silkroute escape","id":"silkroute_escape","url":"projects/silkroute_escape.html"},
-        {"name":"Yahoo! Fireeagle","id":"yahoo_fireeagle","url":"projects/yahoo_fireeagle.html"},
-        {"name":"Yahoo! Avatars","id":"yahoo_avatars","url":"projects/yahoo_avatars.html"},
-        {"name":"Yahoo! Alerts","id":"yahoo_alerts","url":"projects/yahoo_alerts.html"},
-        {"name":"Foley Designs","id":"foley_designs","url":"projects/foley_designs.html"}]
+    var projectList = [
+        {"name": "Yahoo! Labs", "id": "yahoo_labs", "url": "projects/yahoo_labs.html"},
+        {"name": "Yahoo! Exploration", "id": "yahoo_exploration", "url": "projects/yahoo_exploration.html"},
+        {"name": "Logiplex", "id": "logiplex", "url": "projects/logiplex.html"},
+        {"name": "Yahoo! Techyard", "id": "yahoo_techyard", "url": "projects/yahoo_techyard.html"},
+        {"name": "Shivamogga Web", "id": "shivamoggaweb", "url": "projects/shivamoggaweb.html"},
+        {"name": "Yahoo! Polls", "id": "yahoo_polls", "url": "projects/yahoo_polls.html"},
+        {"name": "Nutisystem", "id": "nutisystem", "url": "projects/nutisystem.html"},
+        {"name": "Silkroute escape", "id": "silkroute_escape", "url": "projects/silkroute_escape.html"},
+        {"name": "Yahoo! Fireeagle", "id": "yahoo_fireeagle", "url": "projects/yahoo_fireeagle.html"},
+        {"name": "Yahoo! Avatars", "id": "yahoo_avatars", "url": "projects/yahoo_avatars.html"},
+        {"name": "Yahoo! Alerts", "id": "yahoo_alerts", "url": "projects/yahoo_alerts.html"},
+        {"name": "Foley Designs", "id": "foley_designs", "url": "projects/foley_designs.html"},
+        {"name": "Foley Designs2", "id": "foley_designs2", "url": "projects/foley_designs2.html"}
+    ]
 
     var projectUl = $('.project-list');
 
-    $.each(projectList,function(index, item){
-        projectUl.append('<li id="'+item.id+'"> <a href="?project='+item.id+'" class="project">'+item.name+'</a></li>');
+    $.each(projectList, function (index, item) {
+        projectUl.append('<li id="' + item.id + '"> <a href="?project=' + item.id + '" class="project">' + item.name + '</a></li>');
     })
 
 
     var curProject = getURLParameter('project') || 'shivamoggaweb';
 
-    projectUl.find('#'+curProject).addClass('selected');
+    projectUl.find('#' + curProject).addClass('selected');
 
-    var curProjectConf = _.find(projectList, function(item){return item.id===curProject});
+    var curProjectConf = _.find(projectList, function (item) {
+        return item.id === curProject
+    });
 
 
     $('#projectDetails').load(curProjectConf.url);
-
-
-
-
-
 
 
 </script>
